@@ -109,7 +109,7 @@ SECTIONS
     /* CLA specific sections */
    Cla1Prog         : > RAMLS4, PAGE=0
 
-   CLADataLS0		: > RAMLS0, PAGE=1
+   CLADataLS0		: > RAMLS1, PAGE=1
    CLADataLS1		: > RAMLS1, PAGE=1
 
    Cla1ToCpuMsgRAM  : > CLA1_MSGRAMLOW,   PAGE = 1
