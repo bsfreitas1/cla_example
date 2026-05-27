@@ -1,8 +1,0 @@
-{
-    "interruptInfo" : [
-        {
-            "interruptName": "INT_myCLA01",
-            "interruptHandler": "cla1Isr1"
-        }
-    ]
-}
