@@ -1,11 +1,11 @@
 #include "driverlib.h"
 #include "board.h"
 #include "shared_vars.h"
+#include "CLAmath.h"
 
 __interrupt void Cla1Task1()
 {
-
-    fResult = fVal+1;
+    fResult = CLAsin(fVal);
     int i;
     for(i=0;i<10000;++i) ;
 }

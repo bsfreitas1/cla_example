@@ -5,12 +5,12 @@
 #include "driverlib.h"
 #include "device.h"
 #include "board.h"
-
+#include "math.h"
 
 #pragma DATA_SECTION(fVal,"CpuToCla1MsgRAM");
-float fVal;
+float fVal=0;
 #pragma DATA_SECTION(fResult,"Cla1ToCpuMsgRAM");
-float fResult;
+float fResult=0;
 
 
 void main(void)
@@ -35,7 +35,8 @@ void main(void)
 
 __interrupt void cla1Isr1 ()
 {
-    fVal = fResult;
+    fVal +=0.1f;
+    if(fVal>2*M_PI) fVal=0;
     Interrupt_clearACKGroup(INT_myCLA01_INTERRUPT_ACK_GROUP);
 }
 

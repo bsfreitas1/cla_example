@@ -142,6 +142,7 @@ SECTIONS
    .scratchpad      : > RAMLS1,       PAGE = 1
    .bss_cla		    : > RAMLS1,       PAGE = 1
    .const_cla	    : > RAMLS1,       PAGE = 1
+   CLA1mathTables   : > RAMLS1,       PAGE = 1
 #endif //CLA_C
 }
 
